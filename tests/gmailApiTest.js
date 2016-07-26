@@ -6,44 +6,43 @@ var fs = require('fs'),
 
 
 var emailDir = __dirname + '/emails/',
-  autoEmails = [];
+  bouncedEmails = [];
 
 
 /*
  * Loads all test bounce emails.
  */
 fs.readdirSync(emailDir).forEach(function(file) {
-  if (/^auto/i.test(file))
-    autoEmails.push(file);
+  if (/json$/i.test(file))
+    bouncedEmails.push(file);
 });
 
 
+
 /*
- * Queue up tests for auto emails.
+ * Queue up tests for bounced emails.
  */
-autoEmails.forEach(function(file) {
+bouncedEmails.forEach(function(file) {
 
   exports['Email from ' + file] = {
     topic: function() {
-      var email = fs.readFileSync(emailDir + file),
+      var email = require(emailDir + file),
+      //var email = fs.readFileSync(emailDir + file),
         bounce = new Baunsu(),
         self = this;
-
       bounce.on('end', function(err, result){
         self.callback(err, result);
       });
-
+      console.log("IN test. type is", typeof email);
+      console.log("buffer", Buffer.isBuffer(email));
       bounce.detect(email);
-
     },
-    'Is probably not a bounce': function(result) {
-      assert.isFalse(result.bounced);
+    'Has bounced': function(result) {
+      assert.isTrue(result.bounced);
     },
-    'Should not be a hard bounce': function(result) {
-      assert.isFalse(result.isHard());
-    },
-    'Should not be soft bounce': function(result) {
-      assert.isFalse(result.isSoft());
+    'Should have detected bounce headers': function(result) {
+      assert.instanceOf(result.matches, Hasshu);
+      assert.isTrue(result.matches.length() > 0);
     },
     'Should have a score': function(result) {
       assert.isNumber(result.score);

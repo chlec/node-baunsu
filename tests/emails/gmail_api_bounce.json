@@ -1,0 +1,99 @@
+{
+    "partId" : "",
+    "mimeType" : "text/plain",
+    "filename" : "",
+    "headers" : [ 
+        {
+            "name" : "Delivered-To",
+            "value" : "aki.kaltenbach@fieldtripp.com"
+        }, 
+        {
+            "name" : "Received",
+            "value" : "by 10.55.9.147 with SMTP id 141csp1707566qkj;        Tue, 19 Jul 2016 14:10:59 -0700 (PDT)"
+        }, 
+        {
+            "name" : "X-Received",
+            "value" : "by 10.176.4.3 with SMTP id 3mr21596379uav.127.1468962659488;        Tue, 19 Jul 2016 14:10:59 -0700 (PDT)"
+        }, 
+        {
+            "name" : "Return-Path",
+            "value" : "<>"
+        }, 
+        {
+            "name" : "Received",
+            "value" : "from mail-vk0-x247.google.com (mail-vk0-x247.google.com. [2607:f8b0:400c:c05::247])        by mx.google.com with ESMTPS id k5si406799vkg.49.2016.07.19.14.10.59        for <aki.kaltenbach@fieldtripp.com>        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);        Tue, 19 Jul 2016 14:10:59 -0700 (PDT)"
+        }, 
+        {
+            "name" : "Received-SPF",
+            "value" : "pass (google.com: best guess record for domain of postmaster@mail-vk0-x247.google.com designates 2607:f8b0:400c:c05::247 as permitted sender) client-ip=2607:f8b0:400c:c05::247;"
+        }, 
+        {
+            "name" : "Authentication-Results",
+            "value" : "mx.google.com;       dkim=pass header.i=@googlemail.com;       spf=pass (google.com: best guess record for domain of postmaster@mail-vk0-x247.google.com designates 2607:f8b0:400c:c05::247 as permitted sender) smtp.helo=mail-vk0-x247.google.com;       dmarc=pass (p=QUARANTINE dis=NONE) header.from=googlemail.com"
+        }, 
+        {
+            "name" : "Received",
+            "value" : "by mail-vk0-x247.google.com with SMTP id x130so61879367vkc.3        for <aki.kaltenbach@fieldtripp.com>; Tue, 19 Jul 2016 14:10:58 -0700 (PDT)"
+        }, 
+        {
+            "name" : "DKIM-Signature",
+            "value" : "v=1; a=rsa-sha256; c=relaxed/relaxed;        d=googlemail.com; s=20120113;        h=mime-version:from:to:subject:message-id:date;        bh=s4aGGWQhoqgOuRaUmmoM51glT33qVHWsUqGil7wbmI8=;        b=UNFxE3Mm7EzgeyusjBlVbR2jbLXvmsbhifi5NhmU7BtMcFGDipd9eqcHIgje5KnfdI         eo34I16Ex72Oc3yBtznzlf8YusR2W86PhgviiO/ewPXaKz1XBbAIC78tQZPB6azXeDiG         kBbGQ1k3VIEQkzHc4Sy1rKDMdn8tt6WJM48ixSqvaozNxvMF5QwwDhtkRZvl8A74QwR/         hiTTDv8wkbkXbN7xDfvSdv9MFEFPCzcfWT/IZxfIocIHPRUuSSjd9OqRinzYcVOAbCZ1         XjhZ+BwqllYo7JjxwepCKnheQznM9sIq9HK535ePIJhJzrZi4F66yKL2K6i4b0dd4Qfb         vLlQ=="
+        }, 
+        {
+            "name" : "X-Google-DKIM-Signature",
+            "value" : "v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20130820;        h=x-gm-message-state:mime-version:from:to:subject:message-id:date;        bh=s4aGGWQhoqgOuRaUmmoM51glT33qVHWsUqGil7wbmI8=;        b=WknF/xSmO7tKHHJ65AMgmjZ1YxzWLSamRmUq1UVfFpfTL3ldJAh0IgXuaIDxzDFOHZ         y9OjPUyYghmntb7vG7FRbj9xA7tPbVUilqNIUSMPRywdevex0w9kZ1L0CRfvuOI5xmjJ         ChKz+XBr9vgYlXVELx8/1fmTXU5g0jtQkwzyfhyDFhTO4hQnaUYExYQelmKiDBFiv7bS         xl4x7y3O3SOxf9xdcswspv99dh+yUpWh5z9dVzpV//jjH5+On9r0ccNXoKvM/8y3miJ5         99HORng+o/OBeWOu6YSR8Xss8u7kHpgZT6lYOAGA9c6vKFUD7isRu0ES0KzzW0W/ne60         ylRw=="
+        }, 
+        {
+            "name" : "X-Gm-Message-State",
+            "value" : "ALyK8tICbnFXtNF4OS32eMHdVLxa4cSy4yrvw1r9YDcK5O6RVzHtWBzaXv83/MWeZEsOdavaDyQ7yO/JoQpSJvQ77FMOb/jcDg=="
+        }, 
+        {
+            "name" : "X-Received",
+            "value" : "by 10.55.67.138 with SMTP id q132mr56607119qka.191.1468962658896;        Tue, 19 Jul 2016 14:10:58 -0700 (PDT)"
+        }, 
+        {
+            "name" : "MIME-Version",
+            "value" : "1.0"
+        }, 
+        {
+            "name" : "Return-Path",
+            "value" : "<>"
+        }, 
+        {
+            "name" : "Received",
+            "value" : "by 10.55.67.138 with SMTP id q132mr60158203qka.191; Tue, 19 Jul 2016 14:10:58 -0700 (PDT)"
+        }, 
+        {
+            "name" : "From",
+            "value" : "Mail Delivery Subsystem <mailer-daemon@googlemail.com>"
+        }, 
+        {
+            "name" : "To",
+            "value" : "aki.kaltenbach@fieldtripp.com"
+        }, 
+        {
+            "name" : "Subject",
+            "value" : "Delivery Status Notification (Failure)"
+        }, 
+        {
+            "name" : "X-Failed-Recipients",
+            "value" : "jeremy@urbanwoodworker.com"
+        }, 
+        {
+            "name" : "Message-ID",
+            "value" : "<001a1148a7b678ca6c0538038567@google.com>"
+        }, 
+        {
+            "name" : "Date",
+            "value" : "Tue, 19 Jul 2016 21:10:58 +0000"
+        }, 
+        {
+            "name" : "Content-Type",
+            "value" : "text/plain; charset=UTF-8"
+        }
+    ],
+    "body" : {
+        "size" : 3654,
+        "data" : "RGVsaXZlcnkgdG8gdGhlIGZvbGxvd2luZyByZWNpcGllbnQgZmFpbGVkIHBlcm1hbmVudGx5Og0KDQogICAgIGplcmVteUB1cmJhbndvb2R3b3JrZXIuY29tDQoNClRlY2huaWNhbCBkZXRhaWxzIG9mIHBlcm1hbmVudCBmYWlsdXJlOiANCkdvb2dsZSB0cmllZCB0byBkZWxpdmVyIHlvdXIgbWVzc2FnZSwgYnV0IGl0IHdhcyByZWplY3RlZCBieSB0aGUgc2VydmVyIGZvciB0aGUgcmVjaXBpZW50IGRvbWFpbiB1cmJhbndvb2R3b3JrZXIuY29tIGJ5IG1haWwudXJiYW53b29kd29ya2VyLmNvbS4gWzY5LjE5NS4xMjQuNjldLg0KDQpUaGUgZXJyb3IgdGhhdCB0aGUgb3RoZXIgc2VydmVyIHJldHVybmVkIHdhczoNCjU1MC1WZXJpZmljYXRpb24gZmFpbGVkIGZvciA8YWtpLmthbHRlbmJhY2hAZmllbGR0cmlwcC5jb20-DQo1NTAtQ2FsbGVkOiAgIDc0LjEyNS4yOC4yNg0KNTUwLVNlbnQ6ICAgICBSQ1BUIFRPOjxha2kua2FsdGVuYmFjaEBmaWVsZHRyaXBwLmNvbT4NCjU1MC1SZXNwb25zZTogNTUwLTUuMi4xIFRoZSB1c2VyIHlvdSBhcmUgdHJ5aW5nIHRvIGNvbnRhY3QgaXMgcmVjZWl2aW5nIG1haWwgYXQgYSByYXRlIHRoYXQNCjU1MC01NTAtNS4yLjEgcHJldmVudHMgYWRkaXRpb25hbCBtZXNzYWdlcyBmcm9tIGJlaW5nIGRlbGl2ZXJlZC4gRm9yIG1vcmUNCjU1MC01NTAtNS4yLjEgaW5mb3JtYXRpb24sIHBsZWFzZSB2aXNpdA0KNTUwLTU1MCA1LjIuMSAgaHR0cHM6Ly9zdXBwb3J0Lmdvb2dsZS5jb20vbWFpbC9hbnN3ZXIvNjU5MiBiczFzaTI5MDU4OTY1cGFkLjI3IC0gZ3NtdHANCjU1MCBSRUpFQ1RFRCAtIFNlbmRlciBWZXJpZnkgRmFpbGVkIC0gZXJyb3IgY29kZSAicmVjaXBpZW50Ig0KDQoNCi0tLS0tIE9yaWdpbmFsIG1lc3NhZ2UgLS0tLS0NCg0KREtJTS1TaWduYXR1cmU6IHY9MTsgYT1yc2Etc2hhMjU2OyBjPXJlbGF4ZWQvcmVsYXhlZDsNCiAgICAgICAgZD1maWVsZHRyaXBwLWNvbS4yMDE1MDYyMy5nYXBwc3NtdHAuY29tOyBzPTIwMTUwNjIzOw0KICAgICAgICBoPWNhY2hlLWNvbnRyb2w6ZnJvbTptaW1lLXZlcnNpb246ZGF0ZTptZXNzYWdlLWlkOnN1YmplY3Q6dG87DQogICAgICAgIGJoPURhMHA0eTlPT0toSWswRmk5VHZYcTZqTjcvbzM4dXBEbUlyNkVjSDl2Lzg9Ow0KICAgICAgICBiPWVwejcvYzZMZFNzZWI5aXZkL3F0T2tqaFdpV0hGZUsrMXFZejlYcUhQWThTY3JXcUhJWDRCbTVWT1JVVE1wR0dYUw0KICAgICAgICAgbDlPZFNHVkM1RkVoYU1BQWRTQ0IwZ3hBdWErZHVEb08veDB1WFpMQ3BKOUk0NVRGZ25xYzBOSGYrK0syZVhCVHRTQnENCiAgICAgICAgIHNQdU1UVUs4Vm1uQS9hb1JHOHkwVjRNU3o3bEJ6M1RTTWgybUZKSWp4M1BFU0FacXVCcnVjQnM0VDdqQVBaUjFqUjZLDQogICAgICAgICB5QmFvRXJFbkpuR0tMTG9MOWF6d04rVlpEbXB5eE5sUDhtRWh4QkJnWC9NV1F4UE9haW9UTHFtY0lyYk1vSEVKNmdqWA0KICAgICAgICAgTEVKdFpkSlBhdmVGVEtsZ3lzcEFRWUtZeDVUU2krYkxxdSs4U25xaTJtNWRnRVV3QTBxTTZUaHJLeEViZjJReTlraCsNCiAgICAgICAgIE9oaXc9PQ0KWC1Hb29nbGUtREtJTS1TaWduYXR1cmU6IHY9MTsgYT1yc2Etc2hhMjU2OyBjPXJlbGF4ZWQvcmVsYXhlZDsNCiAgICAgICAgZD0xZTEwMC5uZXQ7IHM9MjAxMzA4MjA7DQogICAgICAgIGg9eC1nbS1tZXNzYWdlLXN0YXRlOmNhY2hlLWNvbnRyb2w6ZnJvbTptaW1lLXZlcnNpb246ZGF0ZTptZXNzYWdlLWlkDQogICAgICAgICA6c3ViamVjdDp0bzsNCiAgICAgICAgYmg9RGEwcDR5OU9PS2hJazBGaTlUdlhxNmpONy9vMzh1cERtSXI2RWNIOXYvOD07DQogICAgICAgIGI9RldHOHlWVDFtSEFaS043NjZZQmN1Qm1yRmdNWDN6cnBhY1BqYTIwYS9ld1hTRHFpR29iNFZhT0llUlRjM0RBWXVWDQogICAgICAgICBPWVBuSmx3RWhTNG1zcFNNWmRQNGpUNllBQWp2eWVNanhEQUVNbThJV2RSVnVkRzc1UHFmczFZcEpZQS9FT05US0hqWA0KICAgICAgICAgdElqWVFheWZqTlgxUVNJRzJ1RnBqMmxUaTF2b29NdHlpcVJCOGlkZ1c2ckdmekxueGlMZWpDUW9ESFlIRzhsV0o2RHENCiAgICAgICAgIEZkcWhGUDNzL09nWVpBUEtrWWs0S0ZWSW90dy8wMjF2OCtpTzNFa3BSRU5HdnFackttdDlBUUpGd0ZGekFkQi9zQkt3DQogICAgICAgICBHeVY1K3Fxcm9xMTR3bE1DYWpiQ0xHcythK0dnMElPUWhZSmVPb2E3WTVnNGVERlN3Vk1QbEozK0JFck9pR0Z3VkNZUg0KICAgICAgICAgVmkwZz09DQpYLUdtLU1lc3NhZ2UtU3RhdGU6IEFMeUs4dEpaU0U1QWx2NEhIa2ZUc3JySEFTc2FFKzlaYTNSWG1uWFFGL2ZmeXhaVVdxNTFlbXJRVkJPa095YXREdkk3Tit1Y2NERmZUN1I3RnltaVNnPT0NClgtUmVjZWl2ZWQ6IGJ5IDEwLjU1LjY3LjEzOCB3aXRoIFNNVFAgaWQgcTEzMm1yNTY2MDY0MDNxa2EuMTkxLjE0Njg5NjI2NTE5NDY7DQogVHVlLCAxOSBKdWwgMjAxNiAxNDoxMDo1MSAtMDcwMCAoUERUKQ0KUmVjZWl2ZWQ6IGZyb20gNDAyMDE4NTUxNTA5IG5hbWVkIHVua25vd24gYnkgZ21haWxhcGkuZ29vZ2xlLmNvbSB3aXRoDQogSFRUUFJFU1Q7IFR1ZSwgMTkgSnVsIDIwMTYgMTQ6MTA6NTEgLTA3MDANClgtQ1VSUkVOVC1BUFA6IERycDd3eEEzdEJxWnI3Wkp4DQpYLUNVUlJFTlQtRURJVE9SOiBNdUdjdDVTZFlReHZMYlp2SA0KQ2FjaGUtQ29udHJvbDogbm8tY2FjaGUsIG1heC1hZ2U9MA0KZnJvbTogQWtpIEthbHRlbmJhY2ggPGFraS5rYWx0ZW5iYWNoQGZpZWxkdHJpcHAuY29tPg0KTUlNRS1WZXJzaW9uOiAxLjANCkRhdGU6IFR1ZSwgMTkgSnVsIDIwMTYgMTQ6MTA6NTEgLTA3MDANCk1lc3NhZ2UtSUQ6IDxDQUZiN3JrV082NVBQcj03cEFST1VHUVhDOE5Mc3hxR054NEtnRFN0MFR2OHFwdEhBZ0FAbWFpbC5nbWFpbC5jb20-DQpTdWJqZWN0OiBDaGVja2VyYm9hcmQgYXJlIGZvciBzdG9vbHMgdG9vIQ0KVG86IGplcmVteUB1cmJhbndvb2R3b3JrZXIuY29tDQpDb250ZW50LVR5cGU6IG11bHRpcGFydC9hbHRlcm5hdGl2ZTsgYm91bmRhcnk9MDAxYTExNDhhN2I2MGVjYzZhMDUzODAzODVlNA0KDQpIaSBKZXJlbXksDQoNCkxvdmUsIGxvdmUsIGxvdmUgdGhlIGNoZWNrZXJib2FyZCBzdG9vbCwgaXQncyBiZWF1dGlmdWwsIHdlbGwgbWFkZS4gTG92ZSBpdCENCg0KSSdtIHdyaXRpbmcgdG8geW91IGJlY2F1c2UgSSdtIHRoZSBjb2ZvdW5kZXIgb2YgRmllbGR0cmlwcC5jb20sIGENCm1hcmtldHBsYWNlIHRoYXQgY29ubmVjdHMgd29ya3Nob3AgaG9zdHMgd2l0aCBwZW9wbGUgbG9va2luZyB0byBsZWFybg0Kc29tZXRoaW5nIG5ldyBpbiBWYW5jb3V2ZXIuIEZpZWxkdHJpcHBzIHdlJ3JlIGN1cnJlbnRseSBmZWF0dXJpbmcgaW5jbHVkZQ0KY2FuZGxlIG1ha2luZywgYmFza2V0IHdlYXZpbmcsIHNjcmVlbnByaW50aW5nIGFuZCBzbyBtdWNoIG1vcmUuDQoNCkkgdGhpbmsgd2hhdCB5b3UgZG8gd291bGQgYmUgcGVyZmVjdCBmb3Igb3VyIGd1ZXN0cy4gV2UnZCBsb3ZlIHRvIGluY2x1ZGUNCnlvdXIgYW1hemluZyB3b3Jrc2hvcHMgb24gb3VyIHNpdGUsIHdlIHByb3ZpZGUgZXZlcnl0aGluZyBmcm9tIGxpc3RpbmcgeW91cg0Kd29ya3Nob3AsIHRvIHByb21vdGluZywgdG8gcGF5bWVudCBwcm9jZXNzaW5nLg0KDQpEbyB5b3UgdGhpbmsgdGhpcyB3b3VsZCBiZSBpbnRlcmVzdGluZyB0byB5b3U_DQoNClNwZWFrIHNvb24hIEFraQ0K"
+    }
+}
