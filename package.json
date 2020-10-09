@@ -1,29 +1,37 @@
 {
-  "name": "baunsu"
-  , "description": "Library to parse and detect bounced emails"
-  , "version": "0.2.3"
-  , "engines": { "node": "*" }
-  , "main": "./lib/baunsu.js"
-  , "author": "Ardie Saeidi <ardalan.saeidi@gmail.com>"
-  , "contributors": [
-      "Dmitry Shirokov <deadrunk@gmail.com>",
-      "Drew Worthey <drew@drewworthey.com>"
-    ]
-  , "repository" :
-    {
-      "type" : "git"
-      , "url" : "https://github.com/ardiesaeidi/node-baunsu"
-    }
-  , "keywords": ["bounce", "bounced email", "bounce detection", "bounce parser", "email", "email parser"]
-  , "dependencies" : {
-      "hasshu" : "0.2.x",
-      "encoding" : "0.1.x"
-    }
-  , "devDependencies": {
-      "vows": "latest"
-    }
-  , "scripts": {
-      "test": "vows tests"
-    }
-  , "license": "MIT"
+  "name": "baunsu",
+  "description": "Library to parse and detect bounced emails",
+  "version": "0.2.4",
+  "engines": {
+    "node": "*"
+  },
+  "main": "./lib/baunsu.js",
+  "author": "Ardie Saeidi <ardalan.saeidi@gmail.com>",
+  "contributors": [
+    "Dmitry Shirokov <deadrunk@gmail.com>",
+    "Drew Worthey <drew@drewworthey.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ardiesaeidi/node-baunsu"
+  },
+  "keywords": [
+    "bounce",
+    "bounced email",
+    "bounce detection",
+    "bounce parser",
+    "email",
+    "email parser"
+  ],
+  "dependencies": {
+    "hasshu": "0.2.x",
+    "encoding": "0.1.x"
+  },
+  "devDependencies": {
+    "vows": "latest"
+  },
+  "scripts": {
+    "test": "vows tests"
+  },
+  "license": "MIT"
 }
